@@ -8,6 +8,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons"
   styleUrls: ["./task-item.component.css"],
 })
 export class TaskItemComponent implements OnInit {
+  
   @Input() task: Task = { text: "", day: "", reminder: false }
   faTimes = faTimes
 
