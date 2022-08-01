@@ -5,10 +5,6 @@ import { Task } from "src/app/Task"
 
 const HttpOptions = {
   headers: new HttpHeaders({ "Content-Type": "application/json" }),
-  /* Got an error:  
-    ----Type 'Observable<ArrayBuffer>' is not assignable to type 'Observable<Task>', Type 'ArrayBuffer' is missing the following properties from type 'Task': text, day, reminder----
-    and this is surprisingly the answer*/
-  observe: "response" as "body",
 }
 
 @Injectable({
